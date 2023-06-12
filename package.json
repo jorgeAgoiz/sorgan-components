@@ -1,0 +1,26 @@
+{
+  "name": "sorgan-components",
+  "version": "0.1.0",
+  "description": "Sorgan React Component Library",
+  "author": {
+    "name": "Jorge Agoiz",
+    "email": "jorgeagoiz@gmail.com"
+  },
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "app/**",
+    "core/**"
+  ],
+  "type": "module",
+  "keywords": [
+    "react",
+    "components",
+    "library",
+    "sorgan"
+  ],
+  "scripts": {
+    "dev:app": "npm run dev --workspace @sorgan-components/app",
+    "dev:core": "npm run dev --workspace @sorgan-components/core"
+  }
+}
