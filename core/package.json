@@ -9,7 +9,7 @@
   ],
   "main": "./dist/sorgan-components.umd.js",
   "module": "./dist/sorgan-components.es.js",
-  "types": "sorgan-components.es.d.ts",
+  "types": "./dist/sorgan-components.es.d.ts",
   "exports": {
     ".": {
       "import": "./dist/sorgan-components.es.js",
