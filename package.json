@@ -1,6 +1,7 @@
 {
   "name": "@sorgan-components/monorepo",
   "version": "0.1.0",
+  "private": false,
   "description": "Sorgan React Component Library",
   "author": {
     "name": "Jorge Agoiz",
@@ -21,5 +22,9 @@
   "scripts": {
     "dev:app": "npm run dev --workspace @sorgan-components/app",
     "dev:core": "npm run dev --workspace @sorgan-components/core"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jorgeAgoiz/sorgan-components"
   }
 }
