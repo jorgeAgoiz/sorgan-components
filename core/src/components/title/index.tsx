@@ -5,7 +5,7 @@ export interface TitleProps {
 }
 
 const Title = ({ text = "hola" }: TitleProps): JSX.Element => {
-  return <h1 className="h1-title">{text}</h1>;
+  return <h1 className="title">{text}</h1>;
 };
 
 export default Title;

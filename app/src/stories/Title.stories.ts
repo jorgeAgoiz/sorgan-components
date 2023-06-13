@@ -1,13 +1,13 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { Title } from "@sorgan-components/core";
+import TitleBasic from "./Title";
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
 const meta = {
   title: "Example/Title",
-  component: Title,
+  component: TitleBasic,
   tags: ["autodocs"],
-} satisfies Meta<typeof Title>;
+} satisfies Meta<typeof TitleBasic>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

@@ -1,6 +1,7 @@
 import react from "@vitejs/plugin-react";
 import { resolve } from "node:path";
 import { defineConfig } from "vite";
+import cssInjectedByJsPlugin from "vite-plugin-css-injected-by-js";
 import dts from "vite-plugin-dts";
 import tsconfigPaths from "vite-tsconfig-paths";
 
@@ -11,6 +12,7 @@ export default defineConfig({
       insertTypesEntry: true,
     }),
     tsconfigPaths(),
+    cssInjectedByJsPlugin(),
     react(),
   ],
   build: {
@@ -20,5 +22,16 @@ export default defineConfig({
       formats: ["es", "umd"],
       fileName: (format) => `sorgan-components.${format}.js`,
     },
+    rollupOptions: {
+      external: ["react", "react-dom"],
+      output: {
+        globals: {
+          react: "React",
+          "react-dom": "ReactDOM",
+        },
+      },
+    },
+    sourcemap: true,
+    emptyOutDir: true,
   },
 });
