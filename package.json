@@ -7,7 +7,6 @@
     "email": "jorgeagoiz@gmail.com"
   },
   "license": "MIT",
-  "private": false,
   "workspaces": [
     "app/**",
     "core/**"
