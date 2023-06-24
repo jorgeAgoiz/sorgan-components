@@ -8,7 +8,13 @@ const meta = {
   component: ButtonBasic,
   tags: ["autodocs"],
   argTypes: {
-    colorVariant: { control: "text" },
+    colorVariant: { control: "select", options: ["primary", "secondary"] },
+    size: { control: "select", options: ["small", "medium", "large"] },
+    text: { control: "text" },
+    variant: { control: "select", options: ["contained", "outlined", "text"] },
+    title: { control: "text" },
+    onClick: { action: "clicked" },
+    disabled: { control: "boolean", defaultValue: false },
   },
 } satisfies Meta<typeof ButtonBasic>;
 
